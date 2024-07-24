@@ -17,6 +17,3 @@ class ClientesControlador:
         direccion = self.vista.pedir('direccion')
         cliente = Cliente(nombre=nombre, direccion=direccion)
         self.cliente_repositorio.agregar(cliente)
-
-
-   

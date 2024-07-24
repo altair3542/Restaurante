@@ -3,7 +3,7 @@
 from vista.comidas_vista import ComidasVista
 from model.comida import Comida
 
-class comidasControlador:
+class ComidasControlador:
     def __init__(self, comida_repositorio):
         self.comida_repositorio = comida_repositorio
         self.vista = ComidasVista()
