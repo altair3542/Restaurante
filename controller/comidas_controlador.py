@@ -14,6 +14,7 @@ class ComidasControlador:
 
     def agregar(self):
         nombre = self.vista.pedir('nombre')
-        precio = self.vista.pedir('precio')
+        precio = float(self.vista.pedir('precio'))
         comida = Comida(nombre=nombre, precio=precio)
         self.comida_repositorio.agregar(comida)
+
